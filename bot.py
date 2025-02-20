@@ -14,14 +14,14 @@ from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE
 class Bot(Client):
     def __init__(self):
         super().__init__(
-            name="Bot",
-            api_hash=API_HASH,
-            api_id=APP_ID,
+            name="@Animetamilcommunity_bot",
+            api_hash=af20cb3285edfde83dad640118259500,
+            api_id=23941087,
             plugins={
                 "root": "plugins"
             },
             workers=TG_BOT_WORKERS,
-            bot_token=TG_BOT_TOKEN
+            bot_token=8163171830:AAHh6E26XAPOQMyVd0GKByBf1c_sAaL1Ayg
         )
         self.LOGGER = LOGGER
 
@@ -32,7 +32,7 @@ class Bot(Client):
 
         if FORCE_SUB_CHANNEL:
             try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
+                link = (await self.get_chat(-1001945519823)).invite_link
                 if not link:
                     await self.export_chat_invite_link(FORCE_SUB_CHANNEL)
                     link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
@@ -44,7 +44,7 @@ class Bot(Client):
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/CodeXBotzSupport for support")
                 sys.exit()
         try:
-            db_channel = await self.get_chat(CHANNEL_ID)
+            db_channel = await self.get_chat(-1002199534798)
             self.db_channel = db_channel
             test = await self.send_message(chat_id = db_channel.id, text = "Test Message")
             await test.delete()
