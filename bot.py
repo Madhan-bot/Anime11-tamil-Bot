@@ -24,9 +24,9 @@ ascii_art = """
 class Bot(Client):
     def __init__(self):
         super().__init__(
-            name="@Animetamilcommunity_bot",
-            api_hash=af20cb3285edfde83dad640118259500,
-            api_id=23941087,
+            name="bot",
+            api_hash=API_HASH,
+            api_id=API_ID,
             plugins={
                 "root": "plugins"
             },
