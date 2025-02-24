@@ -14,7 +14,7 @@ TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7983879430:AAFtHK8H0QJp7fza-5fvdA
 APP_ID = int(os.environ.get("APP_ID", "23941087"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "af20cb3285edfde83dad640118259500")
+API_HASH = os.environ.get("API_HASH", "af20cb3285edfde83dad64011a25950d")
 
 #Your db channel Id
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002199534798"))
@@ -27,7 +27,7 @@ PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Anime11Tamil:1234@cluster0.zzhhi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DB_NAME = os.environ.get("DATABASE_NAME", "anime11tamil")
+DB_NAME = os.environ.get("DATABASE_NAME", "Anime11Tamil")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
